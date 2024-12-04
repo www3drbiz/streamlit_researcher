@@ -111,7 +111,7 @@ def get_chat_response(messages):
 # 메인 앱 로직
 def main():
     # 페이지 제목
-    st.title("🤖 친구봇")
+    st.title("🤖 전문리서치봇")
 
     # 세션 상태 초기화
     initialize_session_state()
