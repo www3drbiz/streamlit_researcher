@@ -107,7 +107,7 @@ def get_chat_response(messages):
         return response_content
     except Exception as e:
         st.error(f"API 호출 중 오류 발생: {e}")
-        return "죄송해. 현재 대화를 처리하는 데 문제가 있어. 다시 시도해줄래? "
+        return "죄송합니다. 현재 대화를 처리하는 데 문제가 있습니다. 다시 시도해주세요. "
 # 메인 앱 로직
 def main():
     # 페이지 제목
@@ -121,11 +121,11 @@ def main():
 
     # API 클라이언트 확인
     if not client:
-        st.warning("API 클라이언트를 초기화할 수 없어. API 키를 확인해줘! 🚨")
+        st.warning("API 클라이언트를 초기화할 수 없습니다.. API 키를 확인해주세요! 🚨")
         return
 
     # 사용자 입력 처리
-    if prompt := st.chat_input("무슨 얘기 하고 싶어?"):
+    if prompt := st.chat_input("전문 보고서의 분석이 필요하십니까?"):
         # 사용자 메시지 추가 및 표시
         user_message = {"role": "user", "content": prompt}
         st.session_state.messages.append(user_message)
