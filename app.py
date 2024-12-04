@@ -7,7 +7,7 @@ from mistralai import Mistral, UserMessage
 #load_dotenv()
 
 # Set page configuration
-st.set_page_config(page_title="친구봇", page_icon="🤖")
+st.set_page_config(page_title="리서치봇", page_icon="🤖")
 
 # Mistral 클라이언트 초기화 
 # API 키를 환경 변수나 Streamlit secrets에서 가져오기
